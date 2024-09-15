@@ -1,68 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Menu toggle
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
+$(document).ready(function() {
+    console.log('DOM fully loaded and parsed');
 
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    }
+    // Menu toggle
+    $('#menu-toggle').on('click', function() {
+        $('#navbarContent').toggleClass('show');
+        console.log('Menu toggle clicked');
+    });
 
     // Language switcher
-    const englishBtn = document.getElementById('english');
-    const arabicBtn = document.getElementById('arabic');
+    $('#language-picker').on('click', 'a', function(event) {
+        event.preventDefault();
+        const lang = $(this).text().trim();
+        alert(`Switched to ${lang}`);
+        console.log(`Language switched to ${lang}`);
+    });
 
-    if (englishBtn) {
-        englishBtn.addEventListener('click', () => {
-            alert('Switched to English');
-        });
-    }
-
-    if (arabicBtn) {
-        arabicBtn.addEventListener('click', () => {
-            alert('Switched to Arabic');
-        });
-    }
-
-    // Form validation
-    const signInForm = document.getElementById('sign-in-form');
-
-    if (signInForm) {
-        signInForm.addEventListener('submit', (event) => {
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-
-            if (!email || !password) {
-                alert('Please fill in all fields.');
-                event.preventDefault();
-            }
-        });
-    }
-
-    // Function to close the ribbon
-    function closeRibbon() {
-        const ribbon = document.getElementById('premiumSubscription');
-        if (ribbon) {
-            ribbon.style.display = 'none'; // Hides the ribbon
+     // Hide premium ribbon function
+     window.hidePremiumRibbon = function() {
+        var $premiumRibbon = $('#premium');
+        if ($premiumRibbon.length) {
+            $premiumRibbon.hide();
+        } else {
+            console.error('Premium ribbon element not found');
         }
-    }
+    };
 
-    // Add event listener to close button
-    const closeBtn = document.querySelector('.close-ribbon-btn');
-    if (closeBtn) {
-        closeBtn.addEventListener('click', closeRibbon);
-    }
-    
-    // Optionally, check if the ribbon should be shown or hidden
-    function checkRibbonStatus() {
-        // Example logic to show the ribbon
-        // Add logic to determine if the ribbon should be shown
-        const ribbon = document.getElementById('premiumSubscription');
-        if (ribbon) {
-            ribbon.style.display = 'block'; // Ensure ribbon is shown initially
-        }
-    }
-
-    checkRibbonStatus();
+    // Close button functionality for premium ribbon
+    $('#premium .ribbon-btn').on('click', function(event) {
+        event.preventDefault(); // Prevent default action if necessary
+        hidePremiumRibbon();
+    });
 });
+
+
