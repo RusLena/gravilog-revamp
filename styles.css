@@ -13,8 +13,8 @@ body {
 }
 
 /* Header */
-.navbar {
-  background-color: #f8f9fa;
+.custom-navbar {
+  background: linear-gradient(to right, white, #e3d2dd) !important;
   display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -35,9 +35,8 @@ body {
   font-weight: bold;
   color: #333;
 }
-
-.navbar-nav .nav-item .nav-link:hover {
-  color: #e861c4;
+.navbar-nav a:hover {
+  text-decoration: underline;
 }
 
 .right-items {
@@ -45,48 +44,73 @@ body {
   align-items: center;
 }
 
-.right-items .for-doctors {
+.for-doctors {
   font-weight: bold;
   color: #3484d2;
   text-decoration: none;
   margin-left: 10px;
+  cursor: pointer;
 }
-
-.language-picker {
+.for-doctors:hover {
+  color: #ef5d9c; 
+  
+}
+#language-picker {
   display: flex;
   align-items: center;
   white-space: nowrap;
 }
 
-.language-picker a {
-  margin: 5px 10px;
-  text-decoration: none;
+#language-picker ul {
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
+
+#language-picker li {
+  margin: 0 5px;
+}
+
+#language-picker .separator {
+  margin: 0 10px; /* Adjust margin for separator */
+  font-weight: normal;
+}
+
+#language-picker a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #333; /* Adjust link color */
+  transition: color 0.3s ease;
+}
+
+#language-picker a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
 
 .custom-btn {
   color: #090909;
   font-size: 15px;
   border-radius: 0.5em;
   background: #c3ceda;
-  border: 1px solid #e8e8e8;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  border: 1px solid #c3ceda;
   text-align: center;
   cursor: pointer;
   padding: 3px 5px;
-  transition: background-color 0.3s, color 0.3s;
   width: 100px;
   margin-right: 10px;
 }
 
 .custom-btn:hover {
   background-color: #f379ae;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3),
-    -5px -5px 5px rgba(255, 255, 255, 0.9);
-  transform: scale(1.05);
+  border: 1px solid #f379ae;
+  color: white;
 }
 
 .btn-custom:active {
-  color: #cc3789;
+  color: #f379ae;
   box-shadow: inset 4px 4px 12px #454444, inset -4px -4px 12px #ffffff; /* Inset shadow on click */
 }
 
@@ -167,7 +191,14 @@ body {
     text-align: center;
   }
 }
-
+.container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 /* Carusel */
 .carousel-item {
   text-align: center;
@@ -237,8 +268,6 @@ font-weight: bold;
   font-weight: bold;
   margin: 0;
   padding: 20px;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6),
-    -2px -2px 6px rgba(255, 255, 255, 2);
   font-size: 2.1rem;
   color: #f25398;
   margin-bottom: 5px;
@@ -284,6 +313,7 @@ h4 {
 .modal-content {
   background-color: #c3ceda;
   padding: 20px;
+  color: #090909;
   border-radius: 8px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -323,7 +353,7 @@ h4 {
 }
 
 h3 {
-  color: #ef5d9c;
+  color: #f25398;
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
@@ -403,7 +433,9 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 60px;
+  margin-bottom: 15px;
+  padding: 25px;
 }
 .media-card a {
   background-color: #b6c4d3;
@@ -416,6 +448,8 @@ h3 {
   height: 100%;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4),
     -8px -8px 15px rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    text-decoration: none;
 }
 
 .media-card a img {
@@ -439,14 +473,9 @@ h3 {
   color: #ff4081;
 }
 
-.media-card a {
-  display: inline-block;
-  text-decoration: none;
-}
-
 /* Cards */
 .card-container,
-.media-container,
+
 .section-container {
   display: flex;
   flex-wrap: wrap;
@@ -513,11 +542,7 @@ h3 {
   font-size: 2.2rem;
   margin-bottom: 25px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color: #3484d2;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
-    -2px -2px 6px rgba(255, 255, 255, 2);
 }
 
 .subscription-text p {
@@ -527,26 +552,19 @@ h3 {
 }
 
 .subscribe-btn {
-  color: #090909;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: #c3ceda;
+  color: #3484d2;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
   cursor: pointer;
-  border: 1px solid #e8e8e8;
-  transition: all 0.3s;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  text-decoration: underline;
+  cursor: pointer; 
+  transition: color 0.3s, text-decoration 0.3s; 
 }
-
-.subscribe-btn:active {
-  color: #cc3789;
-  box-shadow: inset 4px 4px 12px #454444, inset -4px -4px 12px #ffffff;
-}
-
 .subscribe-btn:hover {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3),
-    -5px -5px 5px rgba(255, 255, 255, 0.9);
-  transform: scale(1.05);
+  color: #fff; 
+  color: #ef5d9c;
+  text-decoration: none;
 }
 
 .subscription-img {
@@ -618,7 +636,7 @@ h3 {
 
 /* Footer Styling */
 footer {
-  background-color: #fff;
+  background: linear-gradient(to right, white, #e3d2dd);
   color: #59c0ed;
   padding: 20px;
 }

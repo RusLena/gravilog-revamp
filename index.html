@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/logo.png" alt="Gravilog Logo">
@@ -27,30 +27,36 @@
     <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Calculator</a>
+            <a class="nav-link" href="calculator.html">Calculator</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nutrition</a>
+            <a class="nav-link" href="nutrition.html">Nutrition</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Baby Names</a>
+            <a class="nav-link" href="baby-names.html">Baby Names</a>
           </li>
         </ul>
       </div>
            
         <!-- Right side -->
         <div class="right-items d-flex flex-column align-items-end ms-auto">
-          <div class="language-picker">
-            <span>English</span> | <span>العربية</span>
-          </div>
+            <div id="language-picker">
+                <ul class="nav">
+                  <li><a href="/en/page/features">English</a></li>
+                  <li class="separator">|</li>
+                  <li><a href="/ar/page/features">العربية</a></li>
+                </ul>
+              </div>
           <!-- Links and buttons -->
-          <a href="#" class="nav-link for-doctors mt-2">For Doctors</a>
+          <div class="auth-buttons mt-2">
+            <a href="doctor-info.html" class="for-doctors">For Doctors</a>
+        </div>
           <div class="auth-buttons mt-2">
           <button class="custom-btn me-2">Log In</button>
           <button class="custom-btn">Register</button>
@@ -287,18 +293,19 @@
         </div>
     </section>
     
-    <section class="premium-subscription">
-        <div class="subscription-content">
-            <div class="subscription-text">
-                <h2>Get Premium Nutrition Guidance</h2>
-                <p>Subscribe to our premium service for personalized meal plans, expert advice, and more. Take control of your health journey today!</p>
-                <button class="subscribe-btn">Subscribe Now</button>
-            </div>
-            <div class="subscription-img">
-                <img src="assets/EN_Subscription.png" alt="Phone with Nutrition App">
-            </div>
+   <!-- Premium Subscription -->
+ <section class="premium-subscription">
+    <div class="subscription-content">
+        <div class="subscription-text">
+            <h2>Get Premium Nutrition Guidance</h2>
+            <p>Subscribe to our premium service for personalized meal plans, expert advice, and more. Take control of your health journey today!</p>
+            <a href="#" class="subscribe-btn">Subscribe Now</a>
         </div>
-    </section>
+        <div class="subscription-img">
+            <img src="assets/EN_Subscription.png" alt="Phone with Nutrition App">
+        </div>
+    </div>
+  </section>
     <footer>
         <div class="footer-container">
             <div class="footer-menu">
@@ -334,9 +341,8 @@
                 </a>
             </div>
         </div>
+    </footer>
     
-    
-    <!-- Modal for Log In -->
 <!-- Modal for Log In -->
 <div id="loginModal" class="modal fade" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
