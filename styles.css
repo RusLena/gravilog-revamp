@@ -169,23 +169,19 @@ body {
     width: 100%;
     text-align: left;
   }
-
   .navbar-brand img.logo {
     max-height: 40px;
   }
-
   .right-items {
     display: flex;
     flex-direction: column;
   }
-
   .right-items a,
   .right-items button {
     margin-bottom: 10px;
     margin-right: 0;
     margin-left: auto;
   }
-
   .language-picker, .for .for-doctors {
     margin-bottom: 10px;
     text-align: center;
@@ -199,6 +195,7 @@ body {
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
+
 /* Carusel */
 .carousel-item {
   text-align: center;
@@ -223,20 +220,17 @@ body {
   margin: auto;
   height: 500px;
 }
-
 .car-card-content {
   color: #000;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
 }
-
 .car-card-title {
 color: #f25398;
 font-size: 1.5rem;
 font-weight: bold;
 }
-
 .car-card-img {
   display: block;
   height: auto;
@@ -261,7 +255,6 @@ font-weight: bold;
   background-color: #c3ceda;
   padding: 20px;
 }
-
 .heading-section h1 {
   font-size: 2.6rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -272,14 +265,12 @@ font-weight: bold;
   color: #f25398;
   margin-bottom: 5px;
 }
-
 .heading-section h2 {
   font-size: 2rem;
   font-weight: bold;
   margin: 10px 0 20px;
   color: #3484d2;
 }
-
 h4 {
   font-size: 1.7rem;
   font-weight: bold;
@@ -287,19 +278,16 @@ h4 {
   color: #3484d2;
 }
 
-
 /* Page Content Styling */
 #page {
   padding: 40px 20px;
 }
-
 h3 {
   color: #f25398;
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
 }
-
 .page-content ul {
   display: flex;
   justify-content: space-around;
@@ -307,7 +295,6 @@ h3 {
   gap: 20px;
   margin-top: 30px;
 }
-
 .page-content ul li {
   background-color: #fff;
   padding: 15px;
@@ -316,23 +303,21 @@ h3 {
   flex: 1 1 calc(25% - 40px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-
 .page-content ul li img {
   max-height: 100px;
   margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
-
 .page-content ul li img:hover {
   transform: scale(1.1);
 }
-
 .page-content ul li strong {
   display: block;
   margin-top: 10px;
   font-size: 1.1rem;
   color: #333;
 }
+
 .benefits {
   font-size: 1rem;
   margin-bottom: 20px;
@@ -369,7 +354,6 @@ h3 {
   align-items: center;
   text-align: center;
 }
-
 .media-container {
   display: flex;
   flex-wrap: wrap;
@@ -379,44 +363,39 @@ h3 {
   padding: 25px;
 }
 .media-card a {
-  background-color: #b6c4d3;
+  background-color: #c3ceda;
   flex: 1 1 200px;
+  border: 2px solid whitesmoke;
   padding: 20px;
   text-align: center;
   max-width: 300px;
   border-radius: 10px;
   box-sizing: border-box;
   height: 100%;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4),
-    -8px -8px 15px rgba(255, 255, 255, 0.9);
+ 
     display: inline-block;
     text-decoration: none;
 }
-
 .media-card a img {
   border-radius: 10px;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3),
-    -8px -8px 15px rgba(255, 255, 255, 0.9);
+  
   max-width: 35%;
   height: auto;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
-
 .media-card a p {
   margin-top: 20px;
   font-size: 1rem;
   font-weight: bold;
   color: #333;
 }
-
 .media-card a:hover p {
-  color: #ff4081;
+  color: whitesmoke;
 }
 
 /* Cards */
 .card-container,
-
 .section-container {
   display: flex;
   flex-wrap: wrap;
@@ -424,7 +403,6 @@ h3 {
   gap: 20px;
   padding: 25px;
 }
-
 .card {
   border-radius: 10px;
   border: 1px solid #f0d5d0;
@@ -437,7 +415,6 @@ h3 {
   transition: box-shadow 0.3s ease-in-out;
   position: relative;
 }
-
 .card img {
   display: block;
   border-radius: 5px;
@@ -446,7 +423,6 @@ h3 {
   object-fit: contain;
   height: 250px;
 }
-
 .card-content {
   padding: 20px;
   display: flex;
@@ -455,6 +431,7 @@ h3 {
   color: #000;
 }
 
+/* Ribbon */
 .ribbon {
   position: fixed;
   bottom: 0;
@@ -465,7 +442,6 @@ h3 {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
   z-index: 1000;
   overflow: visible; 
 }
@@ -528,7 +504,7 @@ h3 {
 /* Footer Styling */
 footer {
   background: linear-gradient(to right, white, #e3d2dd);
-  color: #59c0ed;
+  color: #333;
   padding: 20px;
 }
 
@@ -557,7 +533,7 @@ footer {
 }
 
 .footer-menu a {
-  color: #59c0ed;
+  color: #333;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -607,7 +583,7 @@ footer p {
 
 .social-media .social-icon {
   margin: 0 10px;
-  color: #59c0ed;
+  color: rgb(119, 206, 235);
   font-size: 1.5em;
   text-decoration: none;
 }
