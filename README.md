@@ -19,10 +19,10 @@ This project was completed as part of my internship at Gravilog. The goal was to
     The layout of the page is styled using cards to organize information and services into neat sections, improving readability and user engagement.
 
 4. Ribbon for Premium Subscription.
-5. 
+   
     A ribbon is used to advertise the company’s premium subscription service, drawing attention without overwhelming the user.
 
-6. AI-generated Unique Images.
+5. AI-generated Unique Images.
    
     The cards and other visual elements of the page feature unique images created using AI tools, adding an original and modern feel to the overall design.
 
