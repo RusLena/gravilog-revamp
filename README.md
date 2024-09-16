@@ -40,7 +40,7 @@ bash
 
 * Screenshots
   
-![Gravilog Home Page](doctor-info.html)
+![Gravilog Home Page](final-version.png)
 
 ![Cards](Gravilog-cards.png)
 
