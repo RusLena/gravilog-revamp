@@ -38,7 +38,7 @@ This project was completed as part of my internship at Gravilog. The goal was to
 To run the project locally:
     Clone the repository:
     bash
-git clone git@github.com:RusLena/gravilog-revamp.git
+git clone git@github.com: RusLena/gravilog-revamp.git
 Navigate to the project directory:
 bash
     cd gravilog-homepage
