@@ -1,285 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gravilog Website Revamp</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="assets/logo.png" alt="Gravilog Logo">
+                <img src="assets/logo.png" alt="Gravilog Logo" />
             </a>
- <!-- Hamburger toggle button for mobile view -->
- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>  
-    <!-- Menu items -->
-    <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="calculator.html">Calculator</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="nutrition.html">Nutrition</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="baby-names.html">Baby Names</a>
-          </li>
-        </ul>
-      </div>
-        <!-- Right side -->
-        <div class="right-items d-flex flex-column align-items-end ms-auto">
-            <div id="language-picker">
-                <ul class="nav">
-                  <li><a href="/en/page/features">English</a></li>
-                  <li class="separator">|</li>
-                  <li><a href="/ar/page/features">العربية</a></li>
+            <!-- Hamburger toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu items -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calculator.html">Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nutrition.html">Nutrition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="baby-names.html">Baby Names</a>
+                    </li>
                 </ul>
-              </div>
-          <!-- Links and buttons -->
-          <div class="auth-buttons mt-2">
-            <a href="doctor-info.html" class="for-doctors">For Doctors</a>
+            </div>
+            <!-- Right side -->
+            <div class="right-items d-flex flex-column align-items-end ms-auto">
+                <div id="language-picker">
+                    <ul class="nav">
+                        <li><a href="/en/page/features">English</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="/ar/page/features">العربية</a></li>
+                    </ul>
+                </div>
+                <!-- Links and buttons -->
+                <div class="auth-buttons mt-2">
+                    <a href="doctor-info.html" class="for-doctors">For Doctors</a>
+                </div>
+                <div class="auth-buttons mt-2">
+                    <button class="custom-btn me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Log In
+                    </button>
+                    <button class="custom-btn" data-bs-toggle="modal" data-bs-target="#signupModal">
+                        Register
+                    </button>
+                </div>
+            </div>
         </div>
-          <div class="auth-buttons mt-2">
-            <button class="custom-btn me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</button>
-            <button class="custom-btn" data-bs-toggle="modal" data-bs-target="#signupModal">Register</button>
-          </div>
-        </div>
-      </div>
     </nav>
-  
+
     <section>
         <div class="heading-section">
-            <h1>GraviLog: The Healthcare App for Pregnant Women and Obstetricians & Gynecologists (EMR)</h1>
+            <h1>
+                GraviLog: The Healthcare App for Pregnant Women and Obstetricians &
+                Gynecologists (EMR)
+            </h1>
             <h2>Are you a pregnant woman?</h2>
             <h4>We offer you a lot of great benefits!</h4>
         </div>
-    
+
         <!-- Carousel Section -->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                    aria-label="Slide 9"></button>
             </div>
-    
+
             <div class="carousel-inner">
                 <!-- 1st Slide -->
                 <div class="carousel-item active">
                     <div class="car-card">
-                        <img src="assets/pexels-car-treatment.png" class="car-card-img" alt="1st Slide">
+                        <img src="assets/pexels-car-treatment.png" class="car-card-img" alt="1st Slide" />
                         <div class="car-card-content">
                             <h5 class="car-card-title">Complications & Treatments</h5>
-                            <p class="car-card-text">Learn about common pregnancy complications and how to ease symptoms and discomfort.</p>
+                            <p class="car-card-text">
+                                Learn about common pregnancy complications and how to ease
+                                symptoms and discomfort
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- 2nd Slide -->
                 <div class="carousel-item">
                     <div class="car-card">
-                        <img src="assets/car-belly-gallery.png" class="car-card-img" alt="2nd Slide">
+                        <img src="assets/car-belly-gallery.png" class="car-card-img" alt="2nd Slide" />
                         <div class="car-card-content">
                             <h5 class="car-card-title">Gallery</h5>
-                            <p class="car-card-text">Explore weekly images of baby development and growth.</p>
+                            <p class="car-card-text">
+                                Explore weekly images of baby development and growth
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- 3d Slide -->
                 <div class="carousel-item">
                     <div class="car-card">
-                        <img src="assets/shukri.png" class="car-card-img" alt="3d Slide">
+                        <img src="assets/shukri.png" class="car-card-img" alt="3d Slide" />
                         <div class="car-card-content">
                             <h5 class="car-card-title">Trusted by Obstetricians</h5>
-                            <p class="car-card-text">Dr. Shukri Odeh Medical Advisor (Obs/Gyn)</p>
-                            <p class="car-card-text">Collaborate with healthcare professionals seamlessly.</p>
+                            <p class="car-card-text">
+                                Dr. Shukri Odeh Medical Advisor (Obs/Gyn)
+                            </p>
+                            <p class="car-card-text">
+                                Collaborate with healthcare professionals seamlessly
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- 4th Slide -->
                 <div class="carousel-item">
                     <div class="car-card">
-                        <img src="assets/pexels-car-tablets.png" class="car-card-img" alt="4th Slide">
+                        <img src="assets/pexels-car-tablets.png" class="car-card-img" alt="4th Slide" />
                         <div class="car-card-content">
                             <h5 class="car-card-title">Medication</h5>
-                            <p class="car-card-text">Know what Medication to take and what to avoid.</p>
+                            <p class="car-card-text">
+                                Know what Medication to take and what to avoid
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- 5th Slide -->
                 <div class="carousel-item">
                     <div class="car-card">
-                        <img src="assets/EN-car-calc.png" class="car-card-img" alt="5th Slide">
+                        <img src="assets/EN-car-calc.png" class="car-card-img" alt="5th Slide" />
                         <div class="car-card-content">
                             <h5 class="car-card-title">Calculator</h5>
-                            <p class="car-card-text">Use the Calculator to know your baby's birth day, ovulation, and BMI.</p>
+                            <p class="car-card-text">
+                                Use the Calculator to know your baby's birth day, ovulation,
+                                and BMI
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- 6th Slide -->
                 <div class="carousel-item">
                     <div class="car-card">
-                        <img src="assets/pexels-car-food.png" class="car-card-img" alt="6th Slide">
+                        <img src="assets/pexels-car-food.png" class="car-card-img" alt="6th Slide" />
                         <div class="car-card-content">
                             <h5 class="car-card-title">Nutrition</h5>
-                            <p class="car-card-text">Get personalized nutritional tips tailored just for you.</p>
+                            <p class="car-card-text">
+                                Get personalized nutritional tips tailored just for you
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- 7th Slide -->
                 <div class="carousel-item">
                     <div class="car-card">
-                        <img src="assets/EN_Subscription.png" class="car-card-img" alt="7th Slide">
+                        <img src="assets/EN_Subscription.png" class="car-card-img" alt="7th Slide" />
                         <div class="car-card-content">
                             <h5 class="car-card-title">Premium Subscription</h5>
-                            <p class="car-card-text">Choose a Nutrition Subscription, ranging from Basic to Queen tiers.</p>
+                            <p class="car-card-text">
+                                Choose a Nutrition Subscription, ranging from Basic to Queen
+                                tiers
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- 8th Slide -->
                 <div class="carousel-item">
                     <div class="car-card">
-                        <img src="assets/EN_BMI.png" class="car-card-img" alt="8th Slide">
+                        <img src="assets/EN_BMI.png" class="car-card-img" alt="8th Slide" />
                         <div class="car-card-content">
                             <h5 class="car-card-title">Trackers</h5>
-                            <p class="car-card-text">A Weight Tracker. A Kick Tracker. A Contraction Tracker.</p>
+                            <p class="car-card-text">
+                                • A Weight Tracker • A Kick Tracker • A Contraction Tracker
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- 9th Slide -->
                 <div class="carousel-item">
                     <div class="car-card">
-                        <img src="assets/pexels-med-test.png" class="car-card-img" alt="9th Slide">
+                        <img src="assets/pexels-med-test.png" class="car-card-img" alt="9th Slide" />
                         <div class="car-card-content">
                             <h5 class="car-card-title">Medical Tests</h5>
-                            <p class="car-card-text">Find out about common pregnancy tests, receive reminders, and view results online from home</p>
+                            <p class="car-card-text">
+                                Find out about common pregnancy tests, receive reminders, and
+                                view results online from home
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    
+
         <!-- Page Content -->
         <div id="page">
             <!-- Media Sections -->
             <div class="media-container">
                 <div class="media-card">
                     <a href="/sign/register">
-                        <img src="assets/register.png" alt="Register Icon">
-                        <p>Register now to start using the most secure and user-friendly system to track and monitor your patients!</p>
+                        <img src="assets/register.png" alt="Register Icon" />
+                        <div class="text-content">
+                            <h2><strong>For Doctors</strong></h2>
+                            <p>
+                                Register now to start using the most secure and user-friendly
+                                system to track and monitor your patients!
+                            </p>
+                        </div>
                     </a>
                 </div>
+
                 <div class="media-card">
                     <a href="//itunes.apple.com/us/app/gravilog-sjl-alhml/id917157002?ls=1&amp;mt=8" target="_blank">
-                        <img src="assets/woman.png" alt="Pregnant Icon">
-                        <p>Avoid pregnancy complications. Get your medical test results on your smartphone!</p>
+                        <img src="assets/woman.png" alt="Pregnant Icon" />
+                        <div class="text-content">
+                            <h2><strong>For Women</strong></h2>
+                            <p>
+                                Avoid pregnancy complications. Get your medical test results
+                                on your smartphone!
+                            </p>
+                        </div>
                     </a>
                 </div>
             </div>
-    
             <!-- Features Section -->
             <div class="card-container">
                 <div class="card">
                     <div class="card-content">
-                        <img src="assets/pexels-card-find-doc.png" alt="Find a Doctor" width="250">
+                        <img src="assets/pexels-card-find-doc.png" alt="Find a Doctor" width="250" />
                         <div>
                             <h3>Find a Doctor</h3>
-                            <p>The system enables you to look up a gynecologist near you, providing the address and contact information necessary to call and schedule a visit.</p>
+                            <p>
+                                The system enables you to look up a gynecologist near you,
+                                providing the address and contact information necessary to
+                                call and schedule a visit.
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card">
                     <div class="card-content">
-                        <img src="assets/records.png" alt="Medical Record" width="250">
+                        <img src="assets/records.png" alt="Medical Record" width="250" />
                         <div>
                             <h3>Medical Record</h3>
-                            <p>The GraviLog app creates your basic medical record upon using the app for the first time. You can access your medical record anytime and update it whenever needed.</p>
+                            <p>
+                                The GraviLog app creates your basic medical record upon using
+                                the app for the first time. You can access your medical record
+                                anytime and update it whenever needed.
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card">
                     <div class="card-content">
-                        <img src="assets/fem-symptoms1.png" alt="Daily Symptoms" width="250">
+                        <img src="assets/fem-symptoms1.png" alt="Daily Symptoms" width="250" />
                         <div>
                             <h3>Daily Symptoms</h3>
-                            <p>Out of the most common four daily symptoms, you can keep a daily record of the ones which you may be experiencing by checking them off a list with just a screen tap. The good news is that your doctor may have access to these symptoms so he or she can follow up with how you are feeling!</p>
+                            <p>
+                                Out of the most common four daily symptoms, you can keep a
+                                daily record of the ones which you may be experiencing by
+                                checking them off a list with just a screen tap. The good news
+                                is that your doctor may have access to these symptoms so he or
+                                she can follow up with how you are feeling!
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card">
                     <div class="card-content">
-                        <img src="assets/doctor-visit.png" alt="Visits" width="250">
+                        <img src="assets/doctor-visit.png" alt="Visits" width="250" />
                         <div>
                             <h3>Doctor’s Visits</h3>
-                            <p>Your doctor will document in detail all your assessments, diagnoses, prescribed treatments, and medical and laboratory tests, all in one electronic medical record. However, if he or she is not using the system yet, this option allows you to keep record of symptoms and to take note of all issues that you wish to discuss in your next maternity visit. But it would be great to suggest the system to your doctor. It is free, and it guarantees a secure online medical record!</p>
+                            <p>
+                                Your doctor will document in detail all your assessments,
+                                diagnoses, prescribed treatments, and medical and laboratory
+                                tests, all in one electronic medical record. However, if he or
+                                she is not using the system yet, this option allows you to
+                                keep record of symptoms and to take note of all issues that
+                                you wish to discuss in your next maternity visit. But it would
+                                be great to suggest the system to your doctor. It is free, and
+                                it guarantees a secure online medical record!
+                            </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card">
                     <div class="card-content">
-                        <img src="assets/med-fem.png" alt="Medication" width="250">
+                        <img src="assets/med-fem.png" alt="Medication" width="250" />
                         <div>
                             <h3>Medication (Drugs)</h3>
                             <p>This section includes three parts:</p>
                             <ul>
                                 <li>Medications contraindicated during pregnancy.</li>
                                 <li>Medications contraindicated during breastfeeding.</li>
-                                <li>A Medication intake and planner that reminds you of taking your medications on time.</li>
+                                <li>
+                                    A Medication intake and planner that reminds you of taking
+                                    your medications on time.
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card">
                     <div class="card-content">
-                        <img src="assets/pexels-card-bmi.png" alt="Nutrition" width="250">
+                        <img src="assets/pexels-card-bmi.png" alt="Nutrition" width="250" />
                         <div>
                             <h3>Nutrition Guide</h3>
-                            <p>Recommended Total Weight Gain during Pregnancy according to Pre-pregnancy Body Mass Index (BMI).</p>
+                            <p>
+                                Recommended Total Weight Gain during Pregnancy according to
+                                Pre-pregnancy Body Mass Index (BMI).
+                            </p>
                             <ul>
-                                <li>For a BMI &lt;19.8 (underweight) – The recommended weight gain ranges from 28-40 lbs.</li>
-                                <li>For a BMI 19.8-26 (normal) – The recommended weight gain ranges from 25-35 lbs.</li>
-                                <li>For a BMI 26.1-29 (overweight) – The recommended weight gain ranges from 15-25 lbs.</li>
-                                <li>For a BMI &gt;29 (obese) – The recommended weight gain ranges from 11-20 lbs.</li>
+                                <li>
+                                    For a BMI &lt;19.8 (underweight) – The recommended weight
+                                    gain ranges from 28-40 lbs.
+                                </li>
+                                <li>
+                                    For a BMI 19.8-26 (normal) – The recommended weight gain
+                                    ranges from 25-35 lbs.
+                                </li>
+                                <li>
+                                    For a BMI 26.1-29 (overweight) – The recommended weight gain
+                                    ranges from 15-25 lbs.
+                                </li>
+                                <li>
+                                    For a BMI &gt;29 (obese) – The recommended weight gain
+                                    ranges from 11-20 lbs.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -287,20 +385,23 @@
             </div>
         </div>
     </section>
-    
-   <!-- Premium Subscription -->
-   <div class="ribbon" id="premium">
-    <div class="ribbon-content">
-        <h2>Get Premium Nutrition Guidance</h2>
-        <p>Subscribe to our premium service for personalized meal plans, expert advice, and more. Take control of your health journey today!</p>
-        <a href="#" class="subscribe-link">Subscribe Now</a>
-    </div>
-    <div class="subscription-img">
-        <img src="assets/EN_Subscription.png" alt="Phone with Nutrition App">
-    </div>
-    <div>
-        <button class="ribbon-btn">X</button>
-    </div>
+
+    <!-- Premium Subscription -->
+    <div class="ribbon" id="premium">
+        <div class="ribbon-content">
+            <h2>Get Premium Nutrition Guidance</h2>
+            <p>
+                Subscribe to our premium service for personalized meal plans, expert
+                advice, and more. Take control of your health journey today!
+            </p>
+            <a href="#" class="subscribe-link">Subscribe Now</a>
+        </div>
+        <div class="subscription-img">
+            <img src="assets/EN_Subscription.png" alt="Phone with Nutrition App" />
+        </div>
+        <div>
+            <button class="ribbon-btn">X</button>
+        </div>
     </div>
     <footer>
         <div class="footer-container">
@@ -314,12 +415,14 @@
                 </ul>
             </div>
             <div class="badge-container">
-                <p>Download the app for FREE NOW!</p>
+                <p>Download the App for FREE NOW!</p>
                 <a href="//itunes.apple.com/us/app/gravilog-sjl-alhml/id917157002?ls=1&amp;mt=8" target="_blank">
-                    <img src="assets/app-store.png" alt="App Store">
+                    <img src="assets/app-store.png" alt="App Store" />
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.gravilog.app&amp;hl=en&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank" aria-label="Get it on Google Play" class="badge-link">
-                    <img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" class="badge-img">
+                <a href="https://play.google.com/store/apps/details?id=com.gravilog.app&amp;hl=en&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                    target="_blank" aria-label="Get it on Google Play" class="badge-link">
+                    <img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
+                        alt="Get it on Google Play" class="badge-img" />
                 </a>
             </div>
             <div class="social-media">
@@ -327,7 +430,7 @@
                     <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="https://twitter.com" target="_blank" class="social-icon">
-                    <img src="assets/twitterx.png" alt="Twitter">
+                    <img src="assets/twitterx.png" alt="Twitter" />
                 </a>
                 <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
@@ -339,7 +442,8 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
