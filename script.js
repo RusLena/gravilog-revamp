@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log('DOM fully loaded and parsed');
 
     // Menu toggle
     $('#menu-toggle').on('click', function() {
@@ -27,9 +26,39 @@ $(document).ready(function() {
 
     // Close button functionality for premium ribbon
     $('#premium .ribbon-btn').on('click', function(event) {
-        event.preventDefault(); // Prevent default action if necessary
+        event.preventDefault(); 
         hidePremiumRibbon();
     });
+
+// Switch to Register Form from "Don't have an account?" link
+$('.switch-to-register').on('click', function(e) {
+    e.preventDefault();
+    $('.loginForm').addClass('d-none');
+    $('.registerForm').removeClass('d-none');
+    $('#authModalLabel').text('Register');
 });
 
+// Switch to Login Form from "Already have an account?" link
+$('.switch-to-login').on('click', function(e) {
+    e.preventDefault();
+    $('.registerForm').addClass('d-none');
+    $('.loginForm').removeClass('d-none');
+    $('#authModalLabel').text('Log In');
+});
+
+// Show Register Form directly when Register Button is clicked
+$('#openRegisterModal').on('click', function() {
+    $('.loginForm').addClass('d-none');
+    $('.registerForm').removeClass('d-none');
+    $('#authModalLabel').text('Register');
+});
+
+// Show Login Form directly when Log In Button is clicked
+$('#openLoginModal').on('click', function() {
+    $('.registerForm').addClass('d-none');
+    $('.loginForm').removeClass('d-none');
+    $('#authModalLabel').text('Log In');
+});
+
+});
 
