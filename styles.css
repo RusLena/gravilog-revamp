@@ -35,6 +35,7 @@ body {
   font-weight: bold;
   color: #333;
 }
+
 .navbar-nav a:hover {
   text-decoration: underline;
 }
@@ -51,6 +52,7 @@ body {
   margin-left: 10px;
   cursor: pointer;
 }
+
 .for-doctors:hover {
   color: #ef5d9c;
 }
@@ -60,28 +62,33 @@ body {
   align-items: center;
   white-space: nowrap;
 }
+
 #language-picker ul {
-  list-style: none; 
+  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
 }
+
 #language-picker li {
   margin: 0 5px;
 }
+
 #language-picker .separator {
-  margin: 0 10px; 
+  margin: 0 10px;
   font-weight: normal;
 }
+
 #language-picker a {
   text-decoration: none;
   font-weight: 700;
-  color: #333; 
+  color: #333;
   transition: color 0.3s ease;
 }
+
 #language-picker a:hover {
-  color: #007bff; 
+  color: #007bff;
 }
 
 .custom-btn {
@@ -96,14 +103,11 @@ body {
   width: 100px;
   margin-right: 10px;
 }
+
 .custom-btn:hover {
   background-color: #f379ae;
   border: 1px solid #f379ae;
   color: white;
-}
-.btn-custom:active {
-  color: #f379ae;
-  box-shadow: inset 4px 4px 12px #454444, inset -4px -4px 12px #ffffff; 
 }
 
 @media (max-width: 992px) {
@@ -140,6 +144,7 @@ body {
     align-items: center;
     z-index: 1000;
   }
+
   .right-items a,
   .right-items button {
     margin: 0 5px;
@@ -151,6 +156,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .navbar-toggler {
     display: block;
     flex-direction: column;
@@ -161,19 +167,23 @@ body {
     width: 100%;
     text-align: left;
   }
+
   .navbar-brand img.logo {
     max-height: 40px;
   }
+
   .right-items {
     display: flex;
     flex-direction: column;
   }
+
   .right-items a,
   .right-items button {
     margin-bottom: 10px;
     margin-right: 0;
     margin-left: auto;
   }
+
   .language-picker,
   .for .for-doctors {
     margin-bottom: 10px;
@@ -195,6 +205,7 @@ body {
   text-align: center;
   background-image: url("assets/car-background.png");
 }
+
 .carusel,
 .carousel-inner {
   margin: 0;
@@ -203,6 +214,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 .car-card {
   display: flex;
   flex-direction: column;
@@ -214,17 +226,20 @@ body {
   margin: auto;
   height: 500px;
 }
+
 .car-card-content {
   color: #000;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
 }
+
 .car-card-title {
   color: #f25398;
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .car-card-img {
   display: block;
   height: auto;
@@ -237,6 +252,7 @@ body {
   .car-card {
     max-width: 100%;
   }
+
   .car-card-img {
     max-height: 200px;
   }
@@ -249,6 +265,7 @@ body {
   background-color: #cfe2f3;
   padding: 20px;
 }
+
 .heading-section h1 {
   font-size: 2.6rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -259,12 +276,14 @@ body {
   color: #f25398;
   margin-bottom: 5px;
 }
+
 .heading-section h2 {
   font-size: 2rem;
   font-weight: bold;
   margin: 10px 0 20px;
   color: #3484d2;
 }
+
 h4 {
   font-size: 1.7rem;
   font-weight: bold;
@@ -276,6 +295,7 @@ h4 {
 #page {
   padding: 40px 20px;
 }
+
 .page-content ul {
   display: flex;
   justify-content: space-around;
@@ -283,6 +303,7 @@ h4 {
   gap: 20px;
   margin-top: 30px;
 }
+
 .page-content ul li {
   background-color: #fff;
   padding: 15px;
@@ -291,20 +312,24 @@ h4 {
   flex: 1 1 calc(25% - 40px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
+
 .page-content ul li img {
   max-height: 100px;
   margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
+
 .page-content ul li img:hover {
   transform: scale(1.1);
 }
+
 .page-content ul li strong {
   display: block;
   margin-top: 10px;
   font-size: 1.1rem;
   color: #333;
 }
+
 h3 {
   color: #f25398;
   font-size: 1.3rem;
@@ -323,9 +348,11 @@ h3 {
     width: 100%;
     max-width: 500px;
   }
+
   .media-card {
     flex: 1 1 calc(50% - 20px);
   }
+
   footer p {
     font-size: 0.6rem;
   }
@@ -359,7 +386,7 @@ h3 {
 }
 
 .media-card a {
-  background-color: #c3ceda;
+  background-color: #b4cac3;
   flex: 1 1 400px;
   border: 2px solid #e3d2dd;
   padding: 20px;
@@ -374,6 +401,7 @@ h3 {
   gap: 20px;
   text-decoration: none;
 }
+
 .media-card a img {
   border-radius: 10px;
   max-width: 15%;
@@ -381,6 +409,7 @@ h3 {
   transition: transform 0.3s ease;
   cursor: pointer;
 }
+
 .media-card a p {
   margin: 0;
   font-size: 1rem;
@@ -388,25 +417,30 @@ h3 {
   color: #333;
   flex: 1;
 }
+
 .media-card a:hover p {
   color: #f25398;
 }
+
 .media-card h2 {
   margin: 0;
   font-size: 1.25rem;
   font-weight: bold;
   color: #333;
 }
+
 .media-card .text-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Custom styling for the Doctor's Registration modal */
+/* Custom styling for modals */
 .modal-content {
   border-radius: 10px;
   padding: 0px;
+  align-items: center;
+  display: block !important;
 }
 
 .modal-header {
@@ -419,28 +453,30 @@ h3 {
   font-weight: bold;
   color: #333;
 }
+
 .modal-dialog {
-  max-width: 300px; 
-  margin: 1.75rem auto; 
+  max-width: 300px;
+  margin: 1.75rem auto;
 }
+
 .modal-body {
   padding: 1rem 1.5rem;
   background-color: #e3d2dd;
 }
 
 .modal-body form {
-  display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  align-items: center;
 }
 
 .form-group {
-  flex-basis: 100%; 
+  flex-basis: 100%;
 }
 
 @media (min-width: 768px) {
   .form-group.one-half {
-      flex-basis: 48%; 
+    flex-basis: 48%;
   }
 }
 
@@ -450,53 +486,51 @@ h3 {
   margin-bottom: 5px;
 }
 
-.form-control {
+.form-control,
+.form-select {
   padding: 8px;
-  font-size: 14px;
+  font-size: 1rem;
+  font-weight: 400;
   border-radius: 5px;
   border: 1px solid #ddd;
   margin-top: 10px;
-}
-
-.btn-save {
-  background-color: #f25398; 
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn-save:hover {
-  background-color: #f1e2e9;
+  align-items: center;
 }
 
 @media (min-width: 576px) {
   .modal-dialog {
-      max-width: 700px; 
+    max-width: 700px;
   }
 }
-.btn-login {
-  background-color: #f25398; 
+
+.btn {
+  background-color: #f379ae;
+  font-family: Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
 }
-/* Optional: Custom styles for error messages or required fields */
-input:required {
-  border: 1px solid #f25398; 
+
+.btn-custom:hover {
+  background-color: whitesmoke;
 }
-.form-control {
-  border: 1px solid #f25398;
+
+.btn-custom {
+  background-color: #f379ae;
+  color: #333;
 }
+
 a {
   color: #f25398;
   text-decoration: underline;
 }
+
 .form-check-input {
-  border: var(--bs-border-width) solid #f25398;
+  border: var(--bs-border-width) solid whitesmoke;
 }
-input:focus {
-  border-color: #f25398;
-}
+
 
 .form-check-input:checked {
   background-color: #f25398;
@@ -505,89 +539,60 @@ input:focus {
 
 /* Style the modal content specifically for the doctor registration */
 #doctorRegistrationModal .modal-content {
-    border-radius: 10px;
-    padding: 0; 
-    background-color: #f7f7f7; 
+  border-radius: 10px;
+  padding: 0;
+  background-color: #f7f7f7;
 }
 
 /* Style the modal header */
 #doctorRegistrationModal .modal-header {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #ddd;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
 }
 
 /* Ensure the modal title is styled */
 #doctorRegistrationModal .modal-title {
-    font-size: 15px;
-    font-weight: bold;
-    color: #333; 
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
 }
 
 /* Style the modal dialog (outer container of the modal) */
 #doctorRegistrationModal .modal-dialog {
-    max-width: 600px; 
-    margin: 1.75rem auto; 
+  max-width: 600px;
+  margin: 1.75rem auto;
 }
-
-
 
 /* Form elements inside the modal */
 #doctorRegistrationModal .form-control {
-    padding: 8px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px solid #ddd; 
-    margin-top: 10px; 
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
 }
 
-/* Custom button styling for the doctor registration modal */
-#doctorRegistrationModal .btn-save {
-    background-color: #f25398; 
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Add hover effect for the save button */
-#doctorRegistrationModal .btn-save:hover {
-    background-color: #f1e2e9; 
-}
-
-/* Focus state for form inputs */
-#doctorRegistrationModal input:focus {
-    border-color: #f25398; 
-}
-
-/* Dropdown select styling */
-#doctorRegistrationModal select {
-    border: 1px solid #f25398; 
-    border-radius: 5px;
-}
-
-/* Custom styles for error messages or required fields inside the modal */
-#doctorRegistrationModal input:required {
-    border: 1px solid #f25398;
-}
 .registration-card {
-  max-width: 600px; 
-    margin: 1.75rem auto; 
+  max-width: 600px;
+  margin: 1.75rem auto;
+}
+/* Doctor's reitration btn */
+.btn-reg {
+  background-color: #3484d2;
+  color: #ddd;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Custom styles for the custom button */
-.btn-custom {
-  background-color: #f25398; 
-  color: white; 
-  border: none; 
-  border-radius: 4px; 
-  transition: background-color 0.3s ease; 
+.btn-reg:hover {
+  background-color: #3484d2;
+  background-color: #f379ae;
+  color: #555;
 }
 
-.btn-custom:hover {
-  background-color: #c3ceda; 
-}
+
 /* Cards */
 .card-container,
 .section-container {
@@ -597,6 +602,7 @@ input:focus {
   gap: 20px;
   padding: 25px;
 }
+
 .card {
   border-radius: 10px;
   border: 2px solid #e3d2dd;
@@ -608,6 +614,7 @@ input:focus {
   transition: box-shadow 0.3s ease-in-out;
   position: relative;
 }
+
 .card img {
   display: block;
   border-radius: 5px;
@@ -616,6 +623,7 @@ input:focus {
   object-fit: contain;
   height: 250px;
 }
+
 .card-content {
   padding: 20px;
   display: flex;
@@ -644,11 +652,13 @@ input:focus {
   flex: 1;
   padding-right: 120px;
 }
+
 h2 {
   color: #3484d2;
   font-size: 1.8rem;
   font-weight: bold;
 }
+
 .ribbon-content h2,
 .ribbon-content p {
   margin: 0;
@@ -697,12 +707,12 @@ h2 {
 
 @media screen and (max-width: 1024px) {
   .subscription-img img {
-    height: 250px; 
-    right: 10px; 
+    height: 250px;
+    right: 10px;
   }
 
   .ribbon-content {
-    padding-right: 160px; 
+    padding-right: 160px;
   }
 }
 
@@ -711,6 +721,7 @@ h2 {
     display: none;
   }
 }
+
 /* Footer */
 footer {
   background: linear-gradient(to right, white, #e3d2dd);
@@ -773,9 +784,11 @@ footer {
 .badge-img:hover {
   transform: scale(1.05);
 }
+
 .badge-link:last-of-type .badge-img {
   height: 50px;
 }
+
 footer p {
   margin-bottom: 10px;
   font-size: 1.2rem;
@@ -798,44 +811,252 @@ footer p {
   text-decoration: none;
 }
 
-/* Midal Forms */
-.social-login button {
-  color: #fff;
-  width: 40px; /* Make the buttons a bit bigger */
-  height: 40px;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
+/* About Us */
+#about {
+  display: flex;
   align-items: center;
-  margin: 0 10px; /* Spacing between buttons */
-  transition: background-color 0.3s ease; /* Smooth hover transition */
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
 }
 
-button.facebook {
-  background-color: #3b5998; 
+.content {
+  max-width: 700px;
 }
 
-button.google {
-  background-color: green; 
+.content p {
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
-button.apple {
-  background-color: grey; 
+/* Baby names */
+
+#baby-names-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
 }
 
-.social-login button:hover {
-  opacity: 0.8; /* Subtle hover effect */
-}
-.form-sec {
-  transition: all 0.5s ease-in-out;
-}
-
-.form-sec.slide-in {
-  transform: translateX(0);
-  opacity: 1;
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
 }
 
-.form-sec.slide-out {
-  transform: translateX(100%);
-  opacity: 0;
+.alphabet-nav {
+  margin: 20px 0;
+}
+
+.alphabet-nav button {
+  font-size: 1rem;
+  color: #555;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin: 2px;
+  transition: color 0.3s;
+}
+
+/* Baby Names category */
+.names-section h2 {
+  color: #3484d2;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.name-category {
+  margin-top: 20px;
+}
+
+/* Baby Names list */
+.name-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Baby Names card */
+.name-card {
+  background-color: #b4cac3;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 150px;
+  text-align: left;
+  border: 2px solid #e3d2dd
+}
+
+.name-card h4 {
+  font-size: 1.1rem;
+  color: rgb(58, 99, 58);
+  margin-bottom: 5px;
+}
+
+.name-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Gallery */
+#gallery-page {
+  padding: 20px;
+  background-color: #c3ceda;
+}
+
+#gallery-page h2 {
+  text-align: center;
+  color: #f25398;
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+
+/* Gallery Container */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Card Styling */
+.card-baby {
+  background-color: #c3ceda;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+  border: 2px solid #e3d2dd;
+}
+
+.card-baby:hover {
+  transform: scale(1.05);
+}
+
+/* Video Styling */
+.card-baby video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Image Styling */
+.card-baby img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Caption Styling */
+.card-caption {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-caption h4 {
+  font-size: 1rem;
+  color: #3484d2;
+  margin-bottom: 5px;
+}
+
+.card-caption p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+}
+
+/* Calculator */
+#calculator-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #c3ceda;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Calculator Card Styling */
+.calculator-card {
+  background-color: #b4cac3;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border-radius: 10px;
+  border: 2px solid #e3d2dd;
+}
+
+.calculator-card h2 {
+  color: #f25398;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.calc {
+  margin-top: 15px;
+  padding: 10px 15px;
+  color: #555;
+  background-color: #c3ceda;
+  border: 1px solid #c3ceda;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calc:hover {
+  background-color: #f379ae;
+  border: 1px solid #f379ae;
+  color: white;
+}
+
+/* Result Styling */
+#pregnancy-results,
+#ovulation-results,
+#bmi-results {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #333;
 }

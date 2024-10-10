@@ -409,11 +409,11 @@
         <div class="footer-container">
             <div class="footer-menu">
                 <ul>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#help">Help</a></li>
-                    <li><a href="#privacy-policy">Privacy Policy</a></li>
-                    <li><a href="#terms-of-use">Terms of Use</a></li>
+                    <li><a href="About-us.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Help.html">Help</a></li>
+                    <li><a href="Privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="Terms-of-use.html">Terms of Use</a></li>
                 </ul>
             </div>
             <div class="badge-container">
@@ -446,7 +446,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-dialog modal-centered-small modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="authModalLabel">Login</h5>
@@ -454,17 +454,19 @@
                 </div>
 
                 <!-- Modal Body -->
-                <div class="modal-body">
+                <div class="modal-body text-center">
                     <!-- Login Form (Visible by Default) -->
                     <div class="loginForm form-sec">
                         <form>
                             <div class="mb-3">
                                 <label for="loginEmail" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required>
+                                <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email"
+                                    required>
                             </div>
                             <div class="mb-3">
                                 <label for="loginPassword" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+                                <input type="password" class="form-control" id="loginPassword"
+                                    placeholder="Enter your password" required>
                             </div>
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <div class="form-check">
@@ -477,7 +479,7 @@
                                 <button type="submit" class="btn btn-custom btn-md">Login</button>
                             </div>
                         </form>
-                        <p class="mt-3 text-center">
+                        <p class="mt-3">
                             Don't have an account? <a href="#" class="switch-to-register">Register</a>
                         </p>
                     </div>
@@ -489,28 +491,30 @@
                             <div class="row g-2">
                                 <div class="col-md-6">
                                     <label for="registerName" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="registerName" placeholder="Name" required>
+                                    <input type="text" class="form-control" id="registerName" placeholder="Name"
+                                        required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="registerSurname" class="form-label">Surname</label>
-                                    <input type="text" class="form-control" id="registerSurname" placeholder="Surname" required>
+                                    <input type="text" class="form-control" id="registerSurname" placeholder="Surname"
+                                        required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="registerEmail" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="registerEmail" placeholder="Email" required>
+                                    <input type="email" class="form-control" id="registerEmail" placeholder="Email"
+                                        required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="repeatEmail" class="form-label">Repeat Email</label>
-                                    <input type="email" class="form-control" id="repeatEmail" placeholder="Email" required>
+                                    <input type="email" class="form-control" id="repeatEmail" placeholder="Email"
+                                        required>
                                 </div>
-                            </div>
-                            
-                            <div class="row g-2 mt-2">
                                 <div class="col-md-6">
                                     <label for="registerCity" class="form-label">City</label>
-                                    <input type="text" class="form-control" id="registerCity" placeholder="City" required>
+                                    <input type="text" class="form-control" id="registerCity" placeholder="City"
+                                        required>
                                 </div>
-                                <div class="mb-3">
+                                <div class="col-md-6">
                                     <label for="registerCountry" class="form-label">Country</label>
                                     <select class="form-select" id="registerCountry">
                                         <option selected disabled value="">Select your country</option>
@@ -597,27 +601,30 @@
                                         <option value="17">Others</option>
                                     </select>
                                 </div>
-                            
-                                <div class="row g-2 mt-2">
-                                    <div class="col-md-6">
-                                        <label for="registerPassword" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="registerPassword" placeholder="Password" required autocomplete="new-password">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="repeatPassword" class="form-label">Repeat Password</label>
-                                        <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password" required autocomplete="new-password">
-                                    </div>
+                            </div>
+                            <div class="row g-2 mt-2">
+                                <div class="col-md-6">
+                                    <label for="registerPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="registerPassword"
+                                        placeholder="Password" required autocomplete="new-password">
                                 </div>
-                                
-                            
+                                <div class="col-md-6">
+                                    <label for="repeatPassword" class="form-label">Repeat Password</label>
+                                    <input type="password" class="form-control" id="repeatPassword"
+                                        placeholder="Repeat Password" required autocomplete="new-password">
+                                </div>
+                            </div>
+
+
                             <div class="form-check mt-3">
                                 <input class="form-check-input" type="checkbox" id="termsAgree" required>
-                                <label class="form-check-label" for="termsAgree">I agree to the <a href="#">Terms and Conditions</a></label>
+                                <label class="form-check-label" for="termsAgree">I agree to the <a href="#">Terms and
+                                        Conditions</a></label>
                             </div>
                             <div class="mt-3">
                                 <button type="submit" class="btn btn-custom btn-md">Register</button>
                             </div>
-                            <p class="mt-3">
+                            <p class="mt-3 text-center">
                                 Already have an account? <a href="#" class="switch-to-login">Log In</a>
                             </p>
                         </form>
