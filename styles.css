@@ -579,13 +579,17 @@ a {
 .btn-reg {
   background-color: #3484d2;
   color: #ddd;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 10px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
-
+@media (max-width: 768px) {
+  .btn-reg {
+      width: 100%; 
+      text-align: center; /* Center align the text */
+  }
+}
 .btn-reg:hover {
   background-color: #3484d2;
   background-color: #f379ae;
